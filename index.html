@@ -1,38 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-    <title>Multiple object detection using pre trained model in TensorFlow.js</title>
+    <title>Detección de múltiples objetos usando un modelo preentrenado en TensorFlow.js</title>
     <meta charset="utf-8">
-    <!-- Import TensorFlow.js library -->
+    <!-- Importar la librería TensorFlow.js -->
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js" type="text/javascript"></script>
-    <!-- Import the webpage's stylesheet -->
+    <!-- Importar la hoja de estilos de la página -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Multiple object detection using pre trained model in TensorFlow.js</h1>
+    <h1>Detección de múltiples objetos usando un modelo preentrenado en TensorFlow.js</h1>
 
-    <p>Wait for the model to load before clicking the button to enable the webcam - at which point it will become
-        visible to use.</p>
+    <p>Espera a que el modelo cargue antes de hacer clic en el botón para habilitar la cámara web; en ese momento se
+        volverá visible para su uso.</p>
 
     <section id="demos" class="invisible">
 
-        <p>Hold some objects up close to your webcam to get a real-time classification! When ready click "enable webcam"
-            below and accept access to the webcam when the browser asks (check the top left of your window)</p>
+        <p>¡Acerca algunos objetos a tu cámara web para obtener una clasificación en tiempo real! Cuando estés listo,
+            haz clic en "habilitar cámara web" abajo y acepta el acceso a la cámara cuando el navegador lo solicite
+            (revisa la parte superior izquierda de tu ventana).</p>
 
         <div id="liveView" class="camView">
-            <button id="webcamButton">Enable Webcam</button>
+            <button id="webcamButton">Habilitar cámara web</button>
             <video id="webcam" autoplay muted width="640" height="480"></video>
         </div>
     </section>
 
-    <!-- Import TensorFlow.js library -->
+    <!-- Importar la librería TensorFlow.js -->
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js" type="text/javascript"></script>
-    <!-- Load the coco-ssd model to use to recognize things in images -->
+    <!-- Cargar el modelo coco-ssd para reconocer objetos en imágenes -->
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"></script>
 
-    <!-- Import the page's JavaScript to do some stuff -->
+    <!-- Importar el JavaScript de la página para realizar algunas acciones -->
     <script src="script.js" defer></script>
 </body>
 
